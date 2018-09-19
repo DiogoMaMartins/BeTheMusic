@@ -78,10 +78,10 @@ footer{
   display: flex;
   position:relative;
   width:100%;
-  height:100%;
-  background-color: #464646;
+  height:400px;
+  background-color:#333333;
   color:white;
-  bottom:0;
+  bottom:10;
   right:0;
 }
 .logoDown{
@@ -124,8 +124,8 @@ footer{
   top:0;
 }
 .container{
-  margin-left: auto;
-  margin-right:10%;
+  margin-left:1px;
+  margin-right:auto;
   margin-top:0;
   margin-bottom: auto;
   display:grid;
@@ -135,16 +135,15 @@ footer{
 }
 .container section{
   background-color:white;
-  padding:30px;
 }
 .container section:nth-child(even){
-  background-color:#333333;
+  background-color:white;
 }
 .subMenu{
   display:flex;
   color:white;
   background-color:#333333;
-  width:100%;
+  width:96%;
   position:relative;
   left:0;
   right:0;
@@ -193,13 +192,13 @@ a{
   background-color: #333333;
 }
 .slider, li, img{
-  width:95%;
-  left:0;
+  width:96%;
+  left:3%;
 }
 .slider {
      display: block;
      height: 393px;
-     width:100%;
+     width:90%;
      margin: auto;
      margin-left:0;
      margin-top:0;
@@ -210,7 +209,7 @@ a{
      position: absolute;
 }
 .slider img {
-     height:100%;
+     height:90%;
      width: 100%;
      display:flex;
 }
@@ -269,7 +268,7 @@ a{
 /*dddd*/
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
-    width: 100%; /* Full width */
+    width: 94%; /* Full width */
     padding: 12px; /* Some padding */
     border: 1px solid #ccc; /* Gray border */
     border-radius: 4px; /* Rounded borders */
@@ -298,7 +297,6 @@ input[type=submit]:hover {
 .container {
     border-radius: 5px;
     background-color: #f2f2f2;
-    padding: 20px;
 }
 .session{
   position:absolute;
@@ -324,7 +322,7 @@ input[type=submit]:hover {
   position: absolute;
 }
 .downUp, .d{
-  bottom:3%;
+  bottom:1%;
   right:30px;
   position: absolute;
   height:60px;
