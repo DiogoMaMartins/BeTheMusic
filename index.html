@@ -13,7 +13,16 @@
       <a href="#"><input class="signin" type="button" value="Sign in" name="sign in"/></a>
       <a href="#"><input class="signout" type="button" value="Sign out" name="sign out"/></a>
     </div>
-
+     <div class="session">
+       <table border="0">
+         <tr>
+       <th><a href="#contact"><img class="Iconsession" src="icons/contact.png"/></a></th>
+       <th><a href="#two"><img class="Iconsession" src="icons/top.png"/></a></th>
+       <th><a href="#contact"><img class="Iconsession" src="icons/guitar.png"/></a></th>
+       <th><a href="#contact">Contact</a></th>
+     </tr>
+   </table>
+      </div>
   </header>
   <div class="container">
     <section class="one">
@@ -47,7 +56,7 @@
     </table>
     <hr/>
     </section>
-    <section class="two">
+    <section id="two">
      <ul class="slider">
      <li>
            <input type="radio" id="slide1" name="slide" checked>
@@ -75,7 +84,22 @@
     </section>
     <section class="four">FOUR
     </section>
-    <section class="five">FIVE
+    <section id="contact">
+    <form action="action_page.php">
+     <label for="fname">First Name</label>
+     <input type="text" id="fname" name="firstname" placeholder="Your name..">
+     <label for="lname">Last Name</label>
+     <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+     <label for="country">Country</label>
+    <select id="country" name="country">
+     <option value="belgium">Belgium</option>
+     <option value="france">France</option>
+     <option value="usa">USA</option>
+    </select>
+     <label for="subject">Subject</label>
+     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+     <input type="submit" value="Submit">
+    </form>
     </section>
   </div>
   <br/>
@@ -94,6 +118,9 @@
         <li><a href="#">Team</a></li>
         <li><a href="#">Jobs</a></li>
       </ul>
+      <div class="maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.2337820417924!2d4.35509095087856!3d50.84535497943129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c47fd1d960c1%3A0xcbd18b1ea8412062!2sBeCode+Brussels!5e0!3m2!1spt-BR!2sbe!4v1537360602379" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
 
 
 
