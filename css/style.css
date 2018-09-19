@@ -56,6 +56,9 @@ a{
   background-color:#007dc3;
   color:white;
 }
+.welcome{
+  color:#2692b7;
+}
 .signout{
   top:10PX;
   width:300px;
@@ -320,3 +323,10 @@ input[type=submit]:hover {
   right:30px;
   position: absolute;
 }
+.downUp, .d{
+  bottom:3%;
+  right:30px;
+  position: absolute;
+  height:60px;
+  width:60px;
+  }
