@@ -29,8 +29,6 @@ body{
   background-repeat:no-repeat;
   background-size:100%;
   background-image:url("../images/guitar.jpg");
-  height: auto;
-  background-size:auto;
 }
 
 
@@ -144,7 +142,7 @@ body{
 
 .popup .popuptext {
     visibility: hidden;
-    width:90%;
+    width:500px;
     height: auto;
     background-color: #555;
     color: #fff;
@@ -156,6 +154,40 @@ body{
     z-index: 1;
     text-align: justify;
 
+}
+.popupp {
+    position: relative;
+    display: inline-block;
+    cursor: inherit;
+    display: flex;
+    margin-right: 5px;
+    float: right;
+    right: :5%;
+    width: 10%;
+    padding: 15px;
+}
+.popupp .popuptext1 {
+	 right:10%;
+    visibility: hidden;
+    width:500px;
+    height: auto;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border: 10px solid #555;
+    border-radius:50px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    text-align: justify;
+
+}
+.popupp img {
+    opacity: 0.8; 
+    cursor: pointer; 
+    width: 150px;
+    height: 250px;
+    border:black solid;
 }
 .popup img {
     opacity: 0.8; 
@@ -208,7 +240,7 @@ body{
 #fifth-main{
   display: grid;
   background-color: blue;
-  height:20px;;
+  height:100%;;
   justify-content: left;
   background-size: 100%;
   width: 94%;
@@ -224,14 +256,89 @@ body{
   align-items: top;
 }
 
-.fifth-main > position {
-  display: grid;
+#fifth-main{
+  display: flex;
+  background-color: 300%;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-size: 100%;
   width: auto;
-  height: 20px;
-  color:white;
-  background-color:red;
+  background-image:url("../images/music.jpg");
 
-  }
+}
+.menu {
+  background-size: 100%;
+  width: 20%;
+  color: white;
+  height:auto;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    margin-left: 20px;
+
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    color:blue;
+}
+
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
 
 
 

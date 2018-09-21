@@ -25,20 +25,20 @@ a{
   position:relative;
   top:0;
 }
-.menu {
-  position: absolute;
-  right:10%;
-  top:0;
-  margin-top:1%;
+.menuu {
+  position:absolute;
+  right:30%;
+  top:50%;
+
 }
-.menu {
+.menuu {
   list-style: none;
   display:inline-block;
   font-family: fantasy;
   font-size:25px;
   font-weight: bold;
   padding:10px;
-  top:30PX;
+ 
 }
 .signin{
   top:10PX;
@@ -58,6 +58,8 @@ a{
 }
 .welcome{
   color:#333333;
+  position:absolute;
+  right:30%;
 }
 .signout{
   top:10PX;
@@ -78,7 +80,7 @@ a{
 }
 .signout:hover{
   background-color:#333333;
-  color:#CFA75A;
+  color:	#CFA75A;
 }
 footer{
   display: flex;
@@ -102,6 +104,10 @@ footer{
   left:36%;
   position: absolute;
   display:block;
+  color:#CFA75A;
+}
+.sites, a{
+	color:#CFA75A;
 }
 .sites, a:hover{
   color:white;
@@ -114,6 +120,7 @@ footer{
   font-weight: bold;
   padding:10px;
   top:0;
+  color:#CFA75A;
 }
 .Who {
   right: 30%;
@@ -129,7 +136,7 @@ footer{
   padding:10px;
   top:0;
 }
-.container{
+.corpo{
   margin-left:1px;
   margin-right:auto;
   margin-top:0;
@@ -139,10 +146,10 @@ footer{
   position:relative;
   width: 100%;
 }
-.container section{
+.corpo section{
   background-color:white;
 }
-.container section:nth-child(even){
+.corpo section:nth-child(even){
   background-color:white;
 }
 .subMenu{
@@ -301,6 +308,7 @@ a{
   font-weight: bold;
   padding:10px;
   top:0;
+  color:#CFA75A;
 }
 /*dddd*/
 /* Style inputs with type="text", select elements and textareas */
@@ -398,16 +406,20 @@ li{
 a{
   text-decoration: none;
 }
+
+}
 .linkedin{
   width:50px;
   height:50px;
   position:relative;
 }
+
 .twiter{
   position:relative;
   width:60px;
   height:60px;
 }
+
 .reseaux{
   float:left;
   margin-right:auto;
@@ -420,5 +432,37 @@ a{
   font-weight: bold;
   color:rgb(204, 204, 204);
 }
+.container{
+	left:10px;
+	position:relative;
+}
+#foto{
+ width:200px;
+ height:400px;
+ font-size:16px;
+ position: relative;
+ top:0px;
+ display:flex;
+}
+#comentario {
+ position:absolute; 
+ top:10px;
+ left:20px;
+ padding:2px;
+ line-height:20px;
+ background:#333;
+ color:#fff;
+ display: block;
+ width:120px;
+ opacity:0;
 
+ -webkit-transition: all 300ms ease;
+ -moz-transition: all 300ms ease;
+ -ms-transition: all 300ms ease;
+ -o-transition: all 300ms ease;
+ transition: all 300ms ease;
+}
 
+#foto:hover  #comentario{
+      opacity: 1;
+}
