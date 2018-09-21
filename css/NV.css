@@ -142,7 +142,8 @@ body{
 
 .popup .popuptext {
     visibility: hidden;
-    width:500px;
+    width:80%;
+    font-size: 12px;
     height: auto;
     background-color: #555;
     color: #fff;
@@ -257,13 +258,17 @@ body{
 }
 
 #fifth-main{
-  display: flex;
-  background-color: 300%;
   background-repeat: no-repeat;
   height: 100%;
   background-size: 100%;
-  width: auto;
+  width: 100%;
   background-image:url("../images/music.jpg");
+  display: flex;
+  left:0%;
+  position:relative;
+  color:blue;
+  background-size:100%;
+
 
 }
 .menu {
@@ -272,7 +277,11 @@ body{
   color: white;
   height:auto;
   background-size: auto;
-  background-repeat: no-repeat;
+
+
+
+
+
 }
 
 .container {
@@ -337,8 +346,3 @@ body{
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-
-
-
-
-
