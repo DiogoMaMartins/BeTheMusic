@@ -1,0 +1,50 @@
+@media screen and (min-width: 480px) {
+    body {
+        background-color: white;
+    }
+}
+@media screen and (min-width: 480px) {
+    .logoDown {
+        width:200px;;
+        height:200px;
+    }
+}
+@media screen and (min-width: 480px) {
+    .maps iframe {
+        width:200px;;
+        height:200px;
+    }
+}
+@media screen and (min-width: 480px) {
+    .logo {
+        width:100px;;
+        height:100px;
+    }
+}
+@media screen and (min-width: 480px) {
+    .welcome {
+        right:20%;
+    }
+}
+@media screen and (min-width: 480px) {
+    .signout{
+    	width:260px;
+    	height:50px;
+        
+    }
+}
+@media screen and (min-width: 480px) {
+    .signin{
+    	width:260px;
+    	height:50px;
+        
+    }
+}
+@media screen and (min-width: 480px) {
+    .menuu{
+    	right:35%;
+        
+    }
+}
+
+
