@@ -78,6 +78,9 @@ a{
 	background-color:#CFA75A;
 	font-size:20px;
 }
+.d{
+  float:right;
+}
 .signout:hover{
   background-color:#333333;
   color:	#CFA75A;
