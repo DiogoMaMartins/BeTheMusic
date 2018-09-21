@@ -1,17 +1,18 @@
-@media only screen and (min-width: 480px) {
-    body {
-        background-color: white;
-    }.logoDown {
-        width:200px;;
+@media only screen 
+and (min-device-width : 100px) 
+and (max-device-width : 500px){
+
+   .logoDown {
+        width:200px;
         height:200px;
     }.maps iframe {
-        width:200px;;
+        width:200px;
         height:200px;
     }.logo {
-        width:100px;;
+        width:100px;
         height:100px;
     } .welcome {
-        right:20%;
+        right:16%;
     } .signout{
     	width:260px;
     	height:50px;
