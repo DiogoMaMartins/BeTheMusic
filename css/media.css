@@ -36,9 +36,41 @@ and (max-device-width : 500px){
 }
 @media only screen
 and (min-device-width : 500px)
-and (max-device-width : 2000px){
+and (max-device-width : 1200px){
   .menu5{
     display:none;
   }
+}
+   .logoDown {
+        width:170px;
+        height:170px;
+    }.maps iframe {
+        width:190px;
+        height:170px;
+    }.logo {
+        width:150px;
+        height:130px;
+        left:10%;
+    } .welcome{
+      right:1%;
+      top:14%;
+      position: absolute;
+      }.signout{
+    	width:260px;
+    	height:40px;
+
+
+    }.signin{
+    	width:260px;
+    	height:40px;
+
+    } .menuu{
+    	right:35%;
+}.container1{
+  
+}.logomenu{
+  width:100px;
+  height:100px;
+}
 }
 
