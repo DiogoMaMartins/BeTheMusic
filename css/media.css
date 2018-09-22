@@ -30,14 +30,17 @@ and (max-device-width : 500px){
       right:1%;
       top:14%;
       position: absolute;
+    
       }.signout{
     	width:260px;
-    	height:40px;
+    	height:70px;
+        font-size:40px;
 
 
     }.signin{
     	width:260px;
-    	height:40px;
+    	height:70px;
+        font-size:40px;
 
     } .menuu{
     	right:35%;
