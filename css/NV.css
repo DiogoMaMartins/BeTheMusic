@@ -80,7 +80,7 @@ body{
   color: white;
   position: relative;
   margin-top: 10%;
-  margin-left: 10%;    
+  margin-left: 10%;
   border-radius: 50%;
 }
 
@@ -98,14 +98,14 @@ body{
   display: flex;
   background-image:url("../images/deezer.jpg");
   background-repeat: no-repeat;
-  height:auto;
+  height:600px;
   background-size: 100%;
   width: 100%;
   left:0%;
   position:relative;
 
 }
-.element1 {  
+.element1 {
   color:white;
   position:relative;
   margin-top: 15%;
@@ -113,7 +113,7 @@ body{
 
 }
 
-.element2 {  
+.element2 {
   color:white;
   position:absolute;
   margin-top: 20%;
@@ -121,7 +121,7 @@ body{
   text-align: center;
 }
 
-.element3 {  
+.element3 {
   color:white;
     position:absolute;
     margin-top: 26%;
@@ -184,15 +184,15 @@ body{
 
 }
 .popupp img {
-    opacity: 0.8; 
-    cursor: pointer; 
+    opacity: 0.8;
+    cursor: pointer;
     width: 150px;
     height: 250px;
     border:black solid;
 }
 .popup img {
-    opacity: 0.8; 
-    cursor: pointer; 
+    opacity: 0.8;
+    cursor: pointer;
     width: 150px;
     height: 250px;
     border:black solid;
@@ -229,7 +229,7 @@ body{
 }
 
 @-webkit-keyframes fadeIn {
-    from {opacity: 0;} 
+    from {opacity: 0;}
     to {opacity: 1;}
 }
 

@@ -5,17 +5,114 @@
     <link href="css/NV.css" type="text/css" rel="stylesheet"/>
     <link href="css/media.css" type="text/css" rel="stylesheet"/>
     <meta charset="UTF-8">
+    <style>
+    *{margin:0;padding:0;}
+
+#menu5-tgl {
+	display: none;
+  z-index: 4;
+}
+#menu5-tgl ~ .menu5 {
+	box-sizing: border-box;
+	position: fixed;
+	width: 230px;
+	height: 50%;
+	background: #101925;
+	font-family: Verdana;
+	padding-top: 20px;
+	padding-left: 40px;
+	transform: translateX(-100%);
+	transition: transform 0.7s ease;
+  z-index: 4;
+}
+#menu5-tgl ~ .menu5 .menu5-btn {
+	position: absolute;
+	box-sizing: border-box;
+	right: -120px;
+	width: 100px;
+	top: 20px;
+	font-family: Verdana;
+	cursor: pointer;
+	background-color: #101925;
+	color: #fff;
+	padding: 10px 18px;
+	border-radius: 5px;
+	text-align: center;
+  z-index: 4;
+}
+/* Aqui um bônus, para mudar o texto dentro do nosso label
+   nós utilizaremos o pseudo-elemento ::after, assim
+   temos algo ainda mais interativo pro usuário,
+   quando estiver fechado irá aparecer "ABRIR" */
+#menu5-tgl ~ .menu5 .menu5-btn::after {
+	content:"Ouvrir";
+  z-index: 4;
+}
+#menu5-tgl:checked ~ .menu5 {
+	transform: translateX(0%);
+  z-index: 4;
+
+}
+#menu5-tgl:checked ~ .menu5 .menu5-btn::after {
+	content:"Fermer";
+  z-index: 4;
+}
+.SMARTMenu th {
+  display:block;
+  font-size:15px;
+  text-align: left;
+}.SMARTMenu2 th{
+  display:block;
+  font-size:15px;
+  text-align: left;
+}
+    </style>
   </head>
 <body id="top">
   <header>
+    <input type="checkbox" id="menu5-tgl" />
+    <nav class="menu5">
+      <label for="menu5-tgl" class="menu5-btn"></label>
+      <img class="logomenu" src="logo/LOGO.png"/>
+
+        <table class="SMARTMenu" border="0">
+         <tr>
+          <th><a href="#">Guitares</a></th>
+          <th><a href="#">Basses</a></th>
+          <th><a href="#">Batteries</a></th>
+          <th><a href="#">Keys</a></th>
+          <th><a href="#">Strings</a></th>
+          <th><a href="#">PA</a></th>
+          <th><a href="#">Pro Audio</a></th>
+                <th><a href="#">Informatique</a></th>
+                <th><a href="#">DJ</a></th>
+                <th><a href="#">Eclairage</a></th>
+                <th><a href="#">Instr. à vent</a></th>
+                <th><a href="#">Kids</a></th>
+                <th><a href="#">Librairie</a></th>
+              </tr>
+        </table>
+        <hr/>
+        <table class="SMARTMenu2">
+          <tr>
+          <th><a href="#">Bonnes Affaires</a><img id="bonnesAffaires" src="icons/BonnesAffaires.png"/></th>
+          <th><a href="#">Nouveaux Produits</a><img id="NouveauxProduits" src="icons/NouveauxProduits.png"/></th>
+          <th><a href="#">Top-Seller</a><img id="TopSeller" src="icons/Top-Seller.png"/></th>
+          <th><a href="#">Merchandising</a><img id="Merchandising" src="icons/icons8-camiseta-26.png"/></th>
+          <th><a href="#">Brands</a><img id="Merchandising" src="icons/icons8-estrela-24.png"/></th>
+          <th><a href="#">Online Catalogue</a><img id="Merchandising" src="icons/book.png"/></th>
+          <th><a href="#">Band Search</a><img id="Merchandising" src="icons/icons8-pesquisar-filled-50.png"/></th>
+              </tr>
+        </table>
+    </nav>
     <img class="logo" src="logo/LOGO.png"/>
      <h1 class="welcome">Welcome to The Shop Buy Your Instrument</h1>
-    <div class="menuu">
+    <nav class="menuu">
       <a href="#" class="welcome"> </a>
-      <a href="#"><input class="signin" type="button" value="Sign in" name="sign in"/></a>
-      <a href="#"><input class="signout" type="button" value="Sign out" name="sign out"/></a>
-    </div>
-     <div class="session">
+      <a href="#"><input class="signin" type="button" value="S'Identifier " name="sign in"/></a>
+      <a href="#"><input class="signout" type="button" value="Inscription" name="inscription"/></a>
+    </nav>
+     <section class="session">
        <table border="0">
          <tr>
        <th><a href="#contact"><img  class="Iconsession" src="icons/contact.png"/></a></th>
@@ -25,10 +122,9 @@
        <th><a href="#four-header"><img class="Iconsession" src="icons/video.png"/></a></th>
      </tr>
    </table>
-      </div>
+      <section>
   </header>
   <div class="container1">
-    <section class="one">
     <table class="subMenu" border="0">
 	   <tr>
 	    <th><a href="#">Guitares</a></th>
@@ -58,7 +154,7 @@
           </tr>
     </table>
     <hr/>
-    </section>
+  </div>
     <section id="guitar" class="two">
     <section class="galeria">
     <img class="picture" src="TopPictures/GirlWithGuitar.jpg" height="450" width="100%" />
@@ -67,14 +163,14 @@
     <img class="picture" src="TopPictures/GuyWhithGuitar.jpg " height="450" width="100%" />
     </section>
     </section>
-    <section id="guitar" class="three-main"> 
+    <section id="guitar" class="three-main">
   <div class="row">
   <div class="popup" onclick="myFunction()">
     <img src="images/1.jpeg" alt="Nature";">
               <span class="popuptext" id="myPopup"><h1 style="font-size: 15px; "> Gibson Les Paul Faded 2018, Worn Bourbon</h1>  <p>   The Gibson Les Paul Faded Electric Guitar, Worn Bourbon (2018) delivers an incredible feel and tone coupled with the worn-out look of a guitar that's seen many performances. </p><button class="button">BUY</button></span></div>
 
     <div class="popup" onclick="myFunction()">
-    <img src="images/6.jpeg" alt="Nature";">
+    <img src="images/6.jpeg" alt="Nature";>
               <span class="popuptext" id="myPopup"><h1 style="font-size: 15px; "> Gibson Les Paul Faded 2018, Worn Bourbon</h1>  <p>   The Gibson Les Paul Faded Electric Guitar, Worn Bourbon (2018) delivers an incredible feel and tone coupled with the worn-out look of a guitar that's seen many performances. Its classic mahogany body and maple top feature a stunning worn bourbon finish, providing beautifully sweet, warm characteristics and an organic aesthetic. Its slim taper neck and ultra-modern weight relief ensures players receive the ultimate comfort and a smooth performance, while the rosewood fingerboard helps enhance the guitar's highs and lows for an incredibly versatile play. Its PAF inspired humbuckers deliver beautifully vintage tones, with the 490R and 490T offering a moderately high output suitable for a wide range of musical styles. The Gibson is also equipped with vintages-style keystone tuners and a tune-o-matic bridge to enhance string stability and resonance. Delivered with a softshell case for protection, the 2018 Les Paul Faded delivers modern Gibson craftsmanship with a classic style and tone.Product Ref: 96163</p><button class="button">BUY</button></span></div>
     <div class="popup" onclick="myFunction()">
     <img src="images/5.jpeg" alt="Nature";">
@@ -127,7 +223,7 @@
     <img src="images/8.jpeg" alt="Nature";">
               <span class="popuptext" id="myPopup"><h1 style="font-size: 15px; "> Gibson Les Paul Faded 2018, Worn Bourbon</h1>  <p>   The Gibson Les Paul Faded Electric Guitar, Worn Bourbon (2018) delivers an incredible feel and tone coupled with the worn-out look of a guitar that's seen many performances. Its classic mahogany body and maple top feature a stunning worn bourbon finish, providing beautifully sweet, warm characteristics and an organic aesthetic. Its slim taper neck and ultra-modern weight relief ensures players receive the ultimate comfort and a smooth performance, while the rosewood fingerboard helps enhance the guitar's highs and lows for an incredibly versatile play. Its PAF inspired humbuckers deliver beautifully vintage tones, with the 490R and 490T offering a moderately high output suitable for a wide range of musical styles. The Gibson is also equipped with vintages-style keystone tuners and a tune-o-matic bridge to enhance string stability and resonance. Delivered with a softshell case for protection, the 2018 Les Paul Faded delivers modern Gibson craftsmanship with a classic style and tone.Product Ref: 96163</p><button class="button">BUY</button></span></div>
 
-            
+
 </section>
 </div>
 </div>
@@ -149,7 +245,7 @@ function myFunction() {
         </table>
 </div>
 </section>
-    <section> 
+    <section>
     <div id="four-header">
   <div class="element1"><h3 style="font-size: 30px; "> Toujours avec vous</h3></div>
   <div class="element2"><p style="font-size: 20px;"> Ne partez jamais sans votre musique, et écoutez notre radio gratuite.</p></div>
@@ -157,114 +253,115 @@ function myFunction() {
 </div>
     </section>
     <section class="ultimo">
-    <div id="fifth-main">
-  <div class="menu"><h2 style="text-align: center;">Choisissez vos produits</h2>
-     <label class="container">Guitar<input type="checkbox" id="myCheck"  onclick="myFunction2()">
-                  <span class="checkmark"></span><p id="text" style="display:none">Vous avez le choix parmi des centaines de guitares, </p>
-                </label>
-                <label class="container">Batterie
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-                <label class="container">Three
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-                <label class="container">Four
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
+<div id="fifth-main">
+<div class="menu"><h2 style="text-align: center;">Choisissez vos produits</h2>
+ <label class="container">Guitar<input type="checkbox" id="myCheck"  onclick="myFunction2()">
+              <span class="checkmark"></span><p id="text" style="display:none">Vous avez le choix parmi des centaines de guitares, </p>
             </label>
-            <label class="container">Guitar
-            <input type="checkbox" checked="checked">
-                  <span class="checkmark"></span>
-                </label>
-                <label class="container">Batterie
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-                <label class="container">Three
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-                <label class="container">Four
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
+            <label class="container">Batterie
+              <input type="checkbox">
+              <span class="checkmark"></span>
             </label>
-            <label class="container">Guitar
-            <input type="checkbox" checked="checked">
-                  <span class="checkmark"></span>
-                </label>
-                <label class="container">Batterie
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-                <label class="container">Three
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-                <label class="container">Four
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
+            <label class="container">Three
+              <input type="checkbox">
+              <span class="checkmark"></span>
             </label>
-            <button class="button">Rechercher</button>
-          </div>
-    <div class="main"></div>
-          
-        </div>
+            <label class="container">Four
+              <input type="checkbox">
+              <span class="checkmark"></span>
+        </label>
+        <label class="container">Guitar
+        <input type="checkbox" checked="checked">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">Batterie
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">Three
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">Four
+              <input type="checkbox">
+              <span class="checkmark"></span>
+        </label>
+        <label class="container">Guitar
+        <input type="checkbox" checked="checked">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">Batterie
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">Three
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">Four
+              <input type="checkbox">
+              <span class="checkmark"></span>
+        </label>
+        <button class="button">Rechercher</button>
+      </div>
+<div class="main"></div>
+
+    </div>
 
 <script>
 function myFunction2() {
-    let checkBox = document.getElementById("myCheck");
-    let text = document.getElementById("text");
-    if (checkBox.checked == true){
-        text.style.display = "block";
-    } else {
-       text.style.display = "none";
-    }
+let checkBox = document.getElementById("myCheck");
+let text = document.getElementById("text");
+if (checkBox.checked == true){
+    text.style.display = "block";
+} else {
+   text.style.display = "none";
 }
+
 </script>
-    
-    </section>
-    <section id="contact">
-    <fieldset>
-    <form action="action_page.php">
-     <label for="fname"></label>
-     <input type="text" id="fname" name="firstname" placeholder="Your name..">
-     <label for="lname"></label>
-     <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-     <label for="email"></label>
-     <input type="text" id="email" name="email" placeholder="Your mail..">
-     <label for="country"></label>
-     <select id="country" name="country">
-     <option value="Portugal">Portugal</option>
-     <option value="Spain">Spain</option>
-     <option value="France">France</option>
-     <option value="Belgium">Belgium</option>
-    </select>
-     <label for="subject"></label>
-     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-     <input class="send" type="submit" value="Submit">
-  <a class="d" href="#top"><img class="downUp" src="icons/up.png"/></a>
-    </form>
-  </fieldset>
-    </section>
-  </div>
-  <footer>
-    <img class="logoDown" src="logo/LOGO.png"/>
-    <ol class="sites">
-        <li><a href="https://www.designevo.com/en/">Logo made with Design Evo</a></li>
-        <li><a href="https://icons8.com.br/">Icons whith Icons8</a></li>
-        <li><a href="https://pixabay.com/">Images with Pixabay</li>
-      </ol>
-      <ul class="Rules">
-        <li><a href="#"></a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Team</a></li>
-        <li><a href="#">Jobs</a></li>
-      </ul>
-      <div class="maps">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.2337820417924!2d4.35509095087856!3d50.84535497943129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c47fd1d960c1%3A0xcbd18b1ea8412062!2sBeCode+Brussels!5e0!3m2!1spt-BR!2sbe!4v1537360602379" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
-  </footer>
+
+</section>
+<section id="contact">
+<fieldset>
+<form action="action_page.php">
+ <label for="fname"></label>
+ <input type="text" id="fname" name="firstname" placeholder="Your name..">
+ <label for="lname"></label>
+ <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+ <label for="email"></label>
+ <input type="text" id="email" name="email" placeholder="Your mail..">
+ <label for="country"></label>
+ <select id="country" name="country">
+ <option value="Portugal">Portugal</option>
+ <option value="Spain">Spain</option>
+ <option value="France">France</option>
+ <option value="Belgium">Belgium</option>
+</select>
+ <label for="subject"></label>
+ <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+ <input class="send" type="submit" value="Submit">
+<a class="d" href="#top"><img class="downUp" src="icons/up.png"/></a>
+</form>
+</fieldset>
+</section>
+</div>
+<footer>
+<img class="logoDown" src="logo/LOGO.png"/>
+<ol class="sites">
+    <li><a href="https://www.designevo.com/en/">Logo made with Design Evo</a></li>
+    <li><a href="https://icons8.com.br/">Icons whith Icons8</a></li>
+    <li><a href="https://pixabay.com/">Images with Pixabay</li>
+  </ol>
+  <ul class="Rules">
+    <li><a href="#"></a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Team</a></li>
+    <li><a href="#">Jobs</a></li>
+  </ul>
+  <div class="maps">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.2337820417924!2d4.35509095087856!3d50.84535497943129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c47fd1d960c1%3A0xcbd18b1ea8412062!2sBeCode+Brussels!5e0!3m2!1spt-BR!2sbe!4v1537360602379" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+</footer>
 </body>
 </html>
+

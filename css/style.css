@@ -24,6 +24,7 @@ a{
   left:30px;
   position:relative;
   top:0;
+  z-index:3;
 }
 .menuu {
   position:absolute;
@@ -38,7 +39,7 @@ a{
   font-size:25px;
   font-weight: bold;
   padding:10px;
- 
+
 }
 .signin{
   top:10PX;
@@ -210,6 +211,7 @@ a{
   height:500px;;
   position:relative;
   overflow:hidden;
+  z-index: 3;
 }
 .picture{
 	position:absolute;
@@ -376,7 +378,7 @@ input[type=submit]:hover {
   height:60px;
   width:60px;
   }
-  
+
 .three-footer, ul ,li{
   display:flex;
   padding:20px;
@@ -448,7 +450,7 @@ a{
  display:flex;
 }
 #comentario {
- position:absolute; 
+ position:absolute;
  top:10px;
  left:20px;
  padding:2px;
@@ -469,4 +471,44 @@ a{
 #foto:hover  #comentario{
       opacity: 1;
 }
+    label[for="bt_menus"]{
+      padding:5px;
+      background-color:#222;
+      color:#fff;
+      font-family:"Arial";
+      font-size: 30px;
+      cursor:pointer;
+      width:100px;
+      height:100px;
+    }
+     #bt_menus{
+    display:none;
+
+    } label[for="bt_menus"]{
+    display:none;
+    }
+
+
+    @media(max-width:500px){
+    	#bt_menus:checked~.session{
+      margin-left:0;
+    	}
+    .session tr th{
+      width:100%;
+      float:none;
+    }
+    .session{
+         margin-top:5px;
+         margin-left:-100%;
+         transition: all -4s;
+    }
+
+
+    .session tr th{
+      position:static;
+      overflow:hidden;
+      max-height:0;
+    }
+
+    }
 
