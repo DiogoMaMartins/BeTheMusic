@@ -47,15 +47,15 @@ and (max-device-width : 500px){
 }.container1{
   display: none;
 }.logomenu{
-  width:200px;
-  height:200px;
+  width:250px;
+  height:250px;
 } .menuu{
     	right:35%;
 }.container1{
   
 }.logomenu{
-  width:400px;
-  height:400px;
+  width:250px;
+  height:250px;
 }
 }
 @media only screen and (min-device-width : 501px) and (max-device-width : 2000px){
