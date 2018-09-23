@@ -16,8 +16,8 @@ and (max-device-width : 500px){
 }
 
    .logoDown {
-        width:200px;
-        height:200px;
+        width:100px;
+        height:100px;
     }.maps iframe {
         width:200px;
         height:200px;
@@ -47,15 +47,15 @@ and (max-device-width : 500px){
 }.container1{
   display: none;
 }.logomenu{
-  width:100px;
-  height:100px;
+  width:200px;
+  height:200px;
 } .menuu{
     	right:35%;
 }.container1{
   
 }.logomenu{
-  width:100px;
-  height:100px;
+  width:400px;
+  height:400px;
 }
 }
 @media only screen and (min-device-width : 501px) and (max-device-width : 2000px){
