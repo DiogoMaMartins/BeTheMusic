@@ -7,9 +7,13 @@ Le site web est responsive et est entièrement réalisé en HTML et CSS.
 
 
 [site]("https://diogomamartins.github.io/BeTheMusic/")
+GoogleChrome
 ![Header](imagesReadme/chrome.png)
+Firefox
 ![Header](imagesReadme/firefox.png)
+Opera
 ![Header](imagesReadme/opera.png)
+Safari
 ![Header](imagesReadme/safari.png)
 
 
