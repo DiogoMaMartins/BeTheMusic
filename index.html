@@ -7,12 +7,11 @@
     <meta charset="UTF-8">
     <style>
     *{margin:0;padding:0;}
-
-#menu5-tgl {
+    #menu5-tgl {
 	display: none;
-  z-index: 4;
+    z-index: 4;
 }
-#menu5-tgl ~ .menu5 {
+    #menu5-tgl ~ .menu5 {
 	box-sizing: border-box;
 	position: fixed;
 	width: 60%;
@@ -23,9 +22,9 @@
 	padding-left: 40px;
 	transform: translateX(-100%);
 	transition: transform 0.7s ease;
-  z-index: 4;
+    z-index: 4;
 }
-#menu5-tgl ~ .menu5 .menu5-btn {
+    #menu5-tgl ~ .menu5 .menu5-btn {
 	position: absolute;
 	box-sizing: border-box;
 	right: -160px;
@@ -47,16 +46,16 @@
    quando estiver fechado irá aparecer "ABRIR" */
 #menu5-tgl ~ .menu5 .menu5-btn::after {
 	content:"Ouvrir";
-  z-index: 4;
+    z-index: 4;
 }
 #menu5-tgl:checked ~ .menu5 {
 	transform: translateX(0%);
-  z-index: 4;
+    z-index: 4;
 
 }
 #menu5-tgl:checked ~ .menu5 .menu5-btn::after {
 	content:"Fermer";
-  z-index: 4;
+    z-index: 4;
 }
 .SMARTMenu th {
   display:block;
@@ -67,231 +66,213 @@
   font-size:40px;
   text-align: left;
 }
-    </style>
+  </style>
   </head>
 <body id="top">
   <header>
-    <input type="checkbox" id="menu5-tgl" />
-    <nav class="menu5">
-      <label for="menu5-tgl" class="menu5-btn"></label>
-      <img id="logomenufirefox" class="logomenu" src="logo/LOGO.png"/>
-
-        <table id="SMARTMenufirefox" class="SMARTMenu" border="0">
-         <tr>
-          <th><a href="#">Guitares</a></th>
-          <th><a href="#">Basses</a></th>
-          <th><a href="#">Batteries</a></th>
-          <th><a href="#">Keys</a></th>
-          <th><a href="#">Strings</a></th>
-          <th><a href="#">PA</a></th>
-          <th><a href="#">Pro Audio</a></th>
-                <th><a href="#">Informatique</a></th>
-                <th><a href="#">DJ</a></th>
-                <th><a href="#">Eclairage</a></th>
-                <th><a href="#">Instr. à vent</a></th>
-                <th><a href="#">Kids</a></th>
-                <th><a href="#">Librairie</a></th>
-              </tr>
-        </table>
-        <hr/>
-        <table id="SMARTMenu2firefox" class="SMARTMenu2">
-          <tr>
-          <th><a href="#">Bonnes Affaires</a><img id="bonnesAffaires" src="icons/BonnesAffaires.png"/></th>
-          <th><a href="#">Nouveaux Produits</a><img id="NouveauxProduits" src="icons/NouveauxProduits.png"/></th>
-          <th><a href="#">Top-Seller</a><img id="TopSeller" src="icons/Top-Seller.png"/></th>
-          <th><a href="#">Merchandising</a><img id="Merchandising" src="icons/icons8-camiseta-26.png"/></th>
-          <th><a href="#">Brands</a><img id="Merchandising" src="icons/icons8-estrela-24.png"/></th>
-          <th><a href="#">Online Catalogue</a><img id="Merchandising" src="icons/book.png"/></th>
-          <th><a href="#">Band Search</a><img id="Merchandising" src="icons/icons8-pesquisar-filled-50.png"/></th>
-              </tr>
-        </table>
-    </nav>
-      <div id="logofire">
-    <img  class="logo" src="logo/LOGO.png"/>
-  </div>
-     <h1 id="welcomefirefox" class="welcome">Welcome to The Shop Buy Your Instrument</h1>
-    <nav id="menuufirefox" class="menuu">
-      <a href="#" class="welcome"> </a>
-      <a href="#"><input id="signinfirefox" class="signin" type="button" value="S'Identifier " name="sign in"/></a>
-      <a href="#"><input id="signoutfirefox" class="signout" type="button" value="Inscription" name="inscription"/></a>
-    </nav>
-     <section id="sessionfirefox" class="session">
-       <table border="0">
-         <tr>
-       <th><a href="#contact"><img  class="Iconsession" src="icons/contact.png"/></a></th>
-       <th><a href="#two"><img class="Iconsession" src="icons/top.png"/></a></th>
-       <th><a href="#guitar"><img class="Iconsession" src="icons/guitar.png"/></a></th>
-       <th><a href="#three-footer"><img class="Iconsession" src="icons/nota.png"/></a></th>
-       <th><a href="#four-header"><img class="Iconsession" src="icons/video.png"/></a></th>
-     </tr>
+   <input type="checkbox" id="menu5-tgl" />
+   <nav class="menu5">
+   <label for="menu5-tgl" class="menu5-btn"></label>
+   <img id="logomenufirefox" class="logomenu" src="logo/LOGO.png"/>
+   <table id="SMARTMenufirefox" class="SMARTMenu" border="0">
+   <tr>
+    <th><a href="#">Guitares</a></th>
+    <th><a href="#">Basses</a></th>
+    <th><a href="#">Batteries</a></th>
+    <th><a href="#">Keys</a></th>
+    <th><a href="#">Strings</a></th>
+    <th><a href="#">PA</a></th>
+    <th><a href="#">Pro Audio</a></th>
+    <th><a href="#">Informatique</a></th>
+    <th><a href="#">DJ</a></th>
+    <th><a href="#">Eclairage</a></th>
+    <th><a href="#">Instr. à vent</a></th>
+    <th><a href="#">Kids</a></th>
+    <th><a href="#">Librairie</a></th>
+   </tr>
    </table>
-      <section>
+    <hr/>
+   <table id="SMARTMenu2firefox" class="SMARTMenu2">
+   <tr>
+   <th><a href="#">Bonnes Affaires</a><img id="bonnesAffaires" src="icons/BonnesAffaires.png"/></th>
+   <th><a href="#">Nouveaux Produits</a><img id="NouveauxProduits" src="icons/NouveauxProduits.png"/></th>
+   <th><a href="#">Top-Seller</a><img id="TopSeller" src="icons/Top-Seller.png"/></th>
+   <th><a href="#">Merchandising</a><img id="Merchandising" src="icons/icons8-camiseta-26.png"/></th>
+   <th><a href="#">Brands</a><img id="Merchandising" src="icons/icons8-estrela-24.png"/></th>
+   <th><a href="#">Online Catalogue</a><img id="Merchandising" src="icons/book.png"/></th>
+   <th><a href="#">Band Search</a><img id="Merchandising" src="icons/icons8-pesquisar-filled-50.png"/></th>
+  </tr>
+  </table>
+  </nav>
+  <div id="logofire">
+  <img  class="logo" src="logo/LOGO.png"/>
+  </div>
+    <h1 id="welcomefirefox" class="welcome">Welcome to The Shop Buy Your Instrument</h1>
+  <nav id="menuufirefox" class="menuu">
+    <a href="#" class="welcome"> </a>
+    <a href="#"><input id="signinfirefox" class="signin" type="button" value="S'Identifier " name="sign in"/></a>
+    <a href="#"><input id="signoutfirefox" class="signout" type="button" value="Inscription" name="inscription"/></a>
+  </nav>
+  <section id="sessionfirefox" class="session">
+  <table border="0">
+  <tr>
+    <th><a href="#contact"><img  class="Iconsession" src="icons/contact.png"/></a></th>
+    <th><a href="#two"><img class="Iconsession" src="icons/top.png"/></a></th>
+    <th><a href="#guitar"><img class="Iconsession" src="icons/guitar.png"/></a></th>
+    <th><a href="#three-footer"><img class="Iconsession" src="icons/nota.png"/></a></th>
+    <th><a href="#four-header"><img class="Iconsession" src="icons/video.png"/></a></th>
+  </tr>
+  </table>
+  <section>
   </header>
   <div class="container1">
-    <table class="subMenu" border="0">
-	   <tr>
-	    <th><a href="#">Guitares</a></th>
-	    <th><a href="#">Basses</a></th>
-	    <th><a href="#">Batteries</a></th>
-	    <th><a href="#">Keys</a></th>
-	    <th><a href="#">Strings</a></th>
-	    <th><a href="#">PA</a></th>
-	    <th><a href="#">Pro Audio</a></th>
-            <th><a href="#">Informatique</a></th>
-            <th><a href="#">DJ</a></th>
-            <th><a href="#">Eclairage</a></th>
-            <th><a href="#">Instr. à vent</a></th>
-            <th><a href="#">Kids</a></th>
-            <th><a href="#">Librairie</a></th>
-          </tr>
-    </table>
-    <table class="subMenu2">
-      <tr>
-	    <th><img id="bonnesAffaires" src="icons/BonnesAffaires.png"/><a href="#">Bonnes Affaires</a></th>
-	    <th><img id="NouveauxProduits" src="icons/NouveauxProduits.png"/><a href="#">Nouveaux Produits</a></th>
-	    <th><img id="TopSeller" src="icons/Top-Seller.png"/><a href="#">Top-Seller</a></th>
-	    <th><img id="Merchandising" src="icons/icons8-camiseta-26.png"/><a href="#">Merchandising</a></th>
-	    <th><img id="Merchandising" src="icons/icons8-estrela-24.png"/><a href="#">Brands</a></th>
-	    <th><img id="Merchandising" src="icons/book.png"/><a href="#">Online Catalogue</a></th>
-	    <th><img id="Merchandising" src="icons/icons8-pesquisar-filled-50.png"/><a href="#">Band Search</a></th>
-          </tr>
-    </table>
-    <hr/>
+  <table class="subMenu" border="0">
+  <tr>
+	<th><a href="#">Guitares</a></th>
+	<th><a href="#">Basses</a></th>
+    <th><a href="#">Batteries</a></th>
+    <th><a href="#">Keys</a></th>
+	<th><a href="#">Strings</a></th>
+	<th><a href="#">PA</a></th>
+    <th><a href="#">Pro Audio</a></th>
+    <th><a href="#">Informatique</a></th>
+    <th><a href="#">DJ</a></th>
+    <th><a href="#">Eclairage</a></th>
+    <th><a href="#">Instr. à vent</a></th>
+    <th><a href="#">Kids</a></th>
+    <th><a href="#">Librairie</a></th>
+  </tr>
+  </table>
+  <table class="subMenu2">
+  <tr>
+  <th><img id="bonnesAffaires" src="icons/BonnesAffaires.png"/><a href="#">Bonnes Affaires</a></th>
+  <th><img id="NouveauxProduits" src="icons/NouveauxProduits.png"/><a href="#">Nouveaux Produits</a></th>
+  <th><img id="TopSeller" src="icons/Top-Seller.png"/><a href="#">Top-Seller</a></th>
+  <th><img id="Merchandising" src="icons/icons8-camiseta-26.png"/><a href="#">Merchandising</a></th>
+  <th><img id="Merchandising" src="icons/icons8-estrela-24.png"/><a href="#">Brands</a></th>
+  <th><img id="Merchandising" src="icons/book.png"/><a href="#">Online Catalogue</a></th>
+  <th><img id="Merchandising" src="icons/icons8-pesquisar-filled-50.png"/><a href="#">Band Search</a></th>
+  </tr>
+  </table>
+  <hr/>
   </div>
-    <section id="guitar" class="two">
-    <section class="galeria">
-    <img class="picture" src="TopPictures/GirlWithGuitar.jpg" height="450" width="100%" />
-    <img class="picture" src="TopPictures/Table.jpg" height="450" width="100%" />
-    <img class="picture" src="TopPictures/Guitar.jpg"  height="450" width="100%"/>
-    <img class="picture" src="TopPictures/GuyWhithGuitar.jpg " height="450" width="100%" />
-    </section>
-    </section>
-    <section id="guitar" class="three-main"> 
+  <section id="guitar" class="two">
+  <section class="galeria">
+   <img class="picture" src="TopPictures/GirlWithGuitar.jpg" height="450" width="100%" />
+   <img class="picture" src="TopPictures/Table.jpg" height="450" width="100%" />
+   <img class="picture" src="TopPictures/Guitar.jpg"  height="450" width="100%"/>
+   <img class="picture" src="TopPictures/GuyWhithGuitar.jpg " height="450" width="100%" />
+  </section>
+  </section>
+  <section id="guitar" class="three-main"> 
   <div class="header1-1"> <h1 style = "font-size:30px;text-align: center;color:black;">   Meilleures ventes</h1>
-    <div class="arrows prev"></div>
+  <div class="arrows prev"></div>
   <div id="toolfirefox" class="tooltip">
-    <img src="images/1.jpeg";>
+   <img src="images/1.jpeg";>
               <span id="textfirefox" class="tooltiptext"><h1 style="font-size: 15px; "> Gibson Les Paul Faded 2018, Worn Bourbon</h1>  <p>   The Gibson Les Paul Faded Electric Guitar, Worn Bourbon (2018) delivers an incredible feel and tone coupled with the worn-out look of a guitar that's seen many performances. Its classic </p><button class="button">BUY</button></span></div>
-
-    <div id="toolfirefox" class="tooltip">
-    <img src="images/6.jpeg";>
+   <div id="toolfirefox" class="tooltip">
+   <img src="images/6.jpeg";>
                  <span id="textfirefox" class="tooltiptext"><h1 style="font-size: 15px; "> Gibson Les Paul Faded 2018, Worn Bourbon</h1>  <p>   The Gibson Les Paul Faded Electric Guitar, Worn Bourbon (2018) delivers an incredible feel and tone coupled with the worn-out look of a guitar that's seen many performances.  </p><button class="button">BUY</button></span></div>
-    <div id="toolfirefox" class="tooltip">
-    <img src="images/5.jpeg" alt="Nature";">
+   <div id="toolfirefox" class="tooltip">
+   <img src="images/5.jpeg" alt="Nature";">
               <span class="tooltiptext"><h1 style="font-size: 15px; "> qffffffffffffffffffffffult</p><button class="button">BUY</button></span></div>
-
-     <div id="firefoxhidden" class="tooltip">
-    <img src="images/4.jpeg" alt="Nature";">
+   <div id="firefoxhidden" class="tooltip">
+   <img src="images/4.jpeg" alt="Nature";">
                   <span  id="textfirefox" class="tooltiptext"><h1 style="font-size: 15px; "> Gibson Les Paul Faded 2018, Worn Bourbon</h1>  <p>   The Gibson Les Paul Faded Electric Guitar, Worn Bourbon (2018) delivers an incredible feel and tone coupled with the worn-out look of a guitar that's seen many performances.  </p><button class="button">BUY</button></span></div>
  <div id="toolfirefox" class="tooltip">
-    <img src="images/7.jpeg" alt="Nature";">
+ <img src="images/7.jpeg" alt="Nature";">
                   <span id="textfirefox" class="tooltiptext"><h1 style="font-size: 15px; "> Gibson Les Paul Faded 2018, Worn Bourbon</h1>  <p>   The Gibson Les Paul Faded Electric Guitar, Worn Bourbon (2018) delivers an incredible feel and tone coupled with the worn-out look of a guitar that's seen many performances.  </p><button class="button">BUY</button></span></div>
-
   <div id="toolfirefox" class="tooltip">
-    <img src="images/9.jpeg" alt="Nature";">
+  <img src="images/9.jpeg" alt="Nature";">
                   <span id="textfirefox" class="tooltiptext"><h1 style="font-size: 15px; "> Gibson Les Paul Faded 2018, Worn Bourbon</h1>  <p>   The Gibson Les Paul Faded Electric Guitar, Worn Bourbon (2018) delivers an incredible feel and tone coupled with the worn-out look of a guitar that's seen many performances.  </p><button class="button">BUY</button></span></div>
-
-    <div id="toolfirefox" class="tooltip">
-    <img src="images/2.jpeg" alt="Nature";">
+  <div id="toolfirefox" class="tooltip">
+  <img src="images/2.jpeg" alt="Nature";">
                 <span id="textfirefox" class="tooltiptext"><h1 style="font-size: 15px; "> Gibson Les Paul Faded 2018, Worn Bourbon</h1>  <p>   The Gibson Les Paul Faded Electric Guitar, Worn Bourbon (2018) delivers an incredible feel and tone coupled with the worn-out look of a guitar that's seen many performances. </p><button class="button">BUY</button></span></div>
-
    <div  id="toolfirefox" class="tooltip">
-    <img src="images/3.jpeg" alt="Nature";">
+   <img src="images/3.jpeg" alt="Nature";">
                <span id="textfirefox" class="tooltiptext"><h1 style="font-size: 15px; "> Gibson Les Paul Faded 2018, Worn Bourbon</h1>  <p>   The Gibson Les Paul Faded Electric Guitar, Worn Bourbon (2018) delivers an incredible feel and tone coupled with the worn-out look of a guitar that's seen many performances.  </p><button class="button">BUY</button></span></div>
-
-
-        <div  id="toolfirefox" class="tooltip">
-    <img src="images/6.jpeg" alt="Nature";">
+   <div  id="toolfirefox" class="tooltip">
+   <img src="images/6.jpeg" alt="Nature";">
               <span id="textfirefox" class="tooltiptext"><h1 style="font-size: 15px; "> Gibson Les Paul Faded 2018, Worn Bourbon</h1>  <p>   The Gibson Les Paul Faded Electric Guitar, Worn Bourbon (2018) delivers an incredible feel and tone coupled with the worn-out look of a guitar that's seen many performances.  </p><button class="button">BUY</button></span></div>
-
-           <div id="firefoxhidden" class="tooltip">
-    <img src="images/4.jpeg" alt="Nature";">
+   <div id="firefoxhidden" class="tooltip">
+   <img src="images/4.jpeg" alt="Nature";">
                  <span class="tooltiptext"><h1 style="font-size: 15px; "> Gibson Les Paul Faded 2018, Worn Bourbon</h1>  <p>   The Gibson Les Paul Faded Electric Guitar, Worn Bourbon (2018) delivers an incredible feel and tone coupled with the worn-out look of a guitar that's seen many performances. Its classic mahogany body and maple top feature a stunning worn bourbon finish, providing beautifully sweet, warm characteristics and an organic aesthetic. </p><button class="button">BUY</button></span></div>
-
-<div id="firefoxhidden" class="tooltip">
-    <img src="images/5.jpeg" alt="Nature";">
+   <div id="firefoxhidden" class="tooltip">
+   <img src="images/5.jpeg" alt="Nature";">
                <span class="tooltiptext"><h1 style="font-size: 15px; "> Gibson Les Paul Faded 2018, Worn Bourbon</h1>  <p>   The Gibson Les Paul Faded Electric Guitar, Worn Bourbon (2018) delivers an incredible feel and tone coupled with the worn-out look of a guitar that's seen many performances. Its classic mahogany body and maple top feature a stunning worn bourbon finish, providing beautifully sweet, warm characteristics and an organic aesthetic. </p><button class="button">BUY</button></span></div>
-
-         <div id="firefoxhidden" class="tooltip">
+    <div id="firefoxhidden" class="tooltip">
     <img src="images/6.jpeg" alt="Nature";">
                  <span class="tooltiptext"><h1 style="font-size: 15px; "> Gibson Les Paul Faded 2018, Worn Bourbon</h1>  <p>   The Gibson Les Paul Faded Electric Guitar, Worn Bourbon (2018) delivers an incredible feel and tone coupled with the worn-out look of a guitar that's seen many performances. Its classic mahogany body and maple top feature a stunning worn bourbon finish, providing beautifully sweet, warm characteristics and an organic aesthetic. </p><button class="button">BUY</button></span></div>
-
-
-          <div id="firefoxhidden" class="tooltip">
+    <div id="firefoxhidden" class="tooltip">
     <img src="images/7.jpeg" alt="Nature";">
                   <span class="tooltiptext"><h1 style="font-size: 15px; "> Gibson Les Paul Faded 2018, Worn Bourbon</h1>  <p>   The Gibson Les Paul Faded Electric Guitar, Worn Bourbon (2018) delivers an incredible feel and tone coupled with the worn-out look of a guitar that's seen many performances. Its classic mahogany body and maple top feature a stunning worn bourbon finish, providing beautifully sweet, warm characteristics and an organic aesthetic. </p><button class="button">BUY</button></span></div>
-<div id="firefoxhidden" class="tooltip">
+    <div id="firefoxhidden" class="tooltip">
     <img src="images/8.jpeg" alt="Nature";">
               <span class="tooltiptext"><h1 style="font-size: 15px; "> Gibson Les Paul Faded 2018, Worn Bourbon</h1>  <p>   The Gibson Les Paul Faded Electric Guitar, Worn Bourbon (2018) delivers an incredible feel and tone coupled with the worn-out look of a guitar that's seen many performances. Its classic mahogany body and maple top feature a stunning worn bourbon finish, providing beautifully sweet, warm characteristics and an organic aesthetic. </p><button class="button">BUY</button></span></div>
-<div class="arrows next"></div>
-   </div>         
-</section>
-
-   </div>         
-</section>
-
-
+    <div class="arrows next"></div>
+    </div>         
+    </section>
+    </div>         
+    </section>
     <section id="three-footer">
     <div  id="find"   class="element11"><h3style="font-size: 30px;text-align:; "> Retrouvez-nous sur les réseaux sociaux</h3></div>
-     <table id="reseauxfirefox" class="reseaux" border="0">
-           <tr>
-             <th><a href="#"><img  class="facebook" src="http://www.marboinlove.fr/wp-content/uploads/2017/03/picto_fb.png"/></a></th>
-             <th><a href="#"><img class="linkedin" src="https://dumielauxepices.net/sites/default/files/linkedin-clipart-linkedin-png-666580-9165076.png"/></a></th>
-             <th><a href="#"><img class="twiter" src="images/twitter.png"/></a></th>
-           </tr>
-        </table>
-</div>
-</section>
+    <table id="reseauxfirefox" class="reseaux" border="0">
+     <tr>
+     <th><a href="#"><img  class="facebook" src="http://www.marboinlove.fr/wp-content/uploads/2017/03/picto_fb.png"/></a></th>
+     <th><a href="#"><img class="linkedin" src="https://dumielauxepices.net/sites/default/files/linkedin-clipart-linkedin-png-666580-9165076.png"/></a></th>
+      <th><a href="#"><img class="twiter" src="images/twitter.png"/></a></th>
+      </tr>
+      </table>
+    </div>
+    </section>
     <section> 
     <div id="four-header">
-  <div class="element1"><h3 style="font-size: 35px;flex-wrap: nowrap; "> Toujours avec vous</h3><p  > Ne partez jamais sans votre musique, et écoutez notre radio gratuite.</p><br>
-  <iframe src="https://open.spotify.com/embed/user/publicservicebroadcasting/playlist/5a2OuIJ1kEttA8X3PaewlI" style="border: 0; width: 100%; height: 150px;" allowfullscreen></iframe></div>
-</div>
+    <div class="element1"><h3 style="font-size: 35px;flex-wrap: nowrap; "> Toujours avec vous</h3><p  > Ne partez jamais sans votre musique, et écoutez notre radio gratuite.</p><br>
+    <iframe src="https://open.spotify.com/embed/user/publicservicebroadcasting/playlist/5a2OuIJ1kEttA8X3PaewlI" style="border: 0; width: 100%; height: 150px;" allowfullscreen></iframe></div>
+    </div>
     </section>
     <section class="ultimo">
-<div id="fifth-main">
-  <div id="firefox1" class="menu"><h2 style="text-align: center;">Choisissez vos produits</h2>
-     <label id="firefox" class="container">Guitar<input id="testcheckbox" type="checkbox" id="myCheck"  onclick="myFunction2()">
+    <div id="fifth-main">
+    <div id="firefox1" class="menu"><h2 style="text-align: center;">Choisissez vos produits</h2>
+    <label id="firefox" class="container">Guitar<input id="testcheckbox" type="checkbox" id="myCheck"  onclick="myFunction2()">
                   <span id="checkfirefox" class="checkmark"></span><p id="text" style="display:none">Vous avez le choix parmi des centaines de guitares </p>
-                </label >
-                <label id="firefox" class="container">Batterie
-                  <input id="testcheckbox" type="checkbox">
-                  <span id="checkfirefox" class="checkmark"></span>
-                </label>
-                <label id="firefox" class="container">Three
-                  <input id="testcheckbox" type="checkbox">
-                  <span  id="checkfirefox" class="checkmark"></span>
-                </label>
-                <label id="firefox" class="container">Four
-                  <input id="testcheckbox" type="checkbox">
-                  <span id="checkfirefox" class="checkmark"></span>
-            </label>
-            <label id="firefox" class="container">Guitar
-            <input id="testcheckbox" type="checkbox" checked="checked">
-                  <span id="checkfirefox" class="checkmark"></span>
-                </label>
-                <label id="firefox" class="container">Batterie
-                  <input id="testcheckbox" type="checkbox">
-                  <span id="checkfirefox" class="checkmark"></span>
-                </label>
-                <label id="firefox" class="container">Three
-                  <input id="testcheckbox" type="checkbox">
-                  <span id="checkfirefox" class="checkmark"></span>
-                </label>
-                <section id="firefoxhidden">
-                <label id="firefox" class="container">Four
-                  <input id="testcheckbox" type="checkbox">
-                  <span id="checkfirefox" class="checkmark"></span>
-            </label>
-            <label id="firefox" class="container">Guitar
-            <input id="testcheckbox" type="checkbox" checked="checked">
-                  <span id="checkfirefox" class="checkmark"></span>
-                </label>
-                </section>
-              
-            <button id="buttonfirefox" class="button">Rechercher</button>
-          
-          </div>
+    </label >
+    <label id="firefox" class="container">Batterie
+    <input id="testcheckbox" type="checkbox">
+    <span id="checkfirefox" class="checkmark"></span>
+    </label>
+    <label id="firefox" class="container">Three
+    <input id="testcheckbox" type="checkbox">
+    <span  id="checkfirefox" class="checkmark"></span>
+    </label>
+    <label id="firefox" class="container">Four
+    <input id="testcheckbox" type="checkbox">
+    <span id="checkfirefox" class="checkmark"></span>
+    </label>
+    <label id="firefox" class="container">Guitar
+    <input id="testcheckbox" type="checkbox" checked="checked">
+    <span id="checkfirefox" class="checkmark"></span>
+    </label>
+    <label id="firefox" class="container">Batterie
+    <input id="testcheckbox" type="checkbox">
+    <span id="checkfirefox" class="checkmark"></span>
+    </label>
+    <label id="firefox" class="container">Three
+    <input id="testcheckbox" type="checkbox">
+    <span id="checkfirefox" class="checkmark"></span>
+    </label>
+    <section id="firefoxhidden">
+    <label id="firefox" class="container">Four
+    <input id="testcheckbox" type="checkbox">
+    <span id="checkfirefox" class="checkmark"></span>
+    </label>
+    <label id="firefox" class="container">Guitar
+    <input id="testcheckbox" type="checkbox" checked="checked">
+    <span id="checkfirefox" class="checkmark"></span>
+    </label>
+    </section>      
+    <button id="buttonfirefox" class="button">Rechercher</button>
+    </div>
     <section class="menu22">
       <div id="firefox" ><h1 style="font-size=25px; font-weight: bold; text-decoration: underline;">Guitar</h1><p>Electric</p><p>Acoustic</p><p>Bass</p><p>Bass</p>   </div>
       <div id="firefox" ><h1 style="font-size=25px; font-weight: bold;text-decoration: underline;">Drums</h1><p>Electronic</p><p>Acoustic</p><p>Cymbals</p><p>Drum Hardware</p>   </div>
@@ -299,22 +280,8 @@
       <div id="firefox"><h1 style="font-size=25px; font-weight: bold;text-decoration: underline;">Orchestral</h1><p>Electric</p><p>Acoustic</p><p>Bass</p><p>Bass</p>   </div>
       <div id="firefox"><h1 style="font-size=25px; font-weight: bold;text-decoration: underline;">Studio</h1><p>Electric</p><p>Acoustic</p><p>Bass</p><p>Bass</p>   </div>
       <div id="firefox"><h1 style="font-size=25px; font-weight: bold;text-decoration: underline;">Live and PA</h1><p>Electric</p><p>Acoustic</p><p>Bass</p><p>Bass</p>   </div>
-  </section>
-
-</div>
-
-<script>
-function myFunction2() {
-    let checkBox = document.getElementById("myCheck");
-    let text = document.getElementById("text");
-    if (checkBox.checked == true){
-        text.style.display = "block";
-    } else {
-       text.style.display = "none";
-    }
-}
-</script>
-    
+    </section>
+    </div>
     </section>
 <section id="contact">
 <fieldset>
